@@ -3,15 +3,16 @@ Repository to practice signed commits
 
 ```
 brew install gpg
-gpg --version
+gpg --version # must be greater than 2.1.17
 
 gpg --list-secret-keys --keyid-format=long
 
-gpg --full-generate-key
+gpg --full-generate-key # Your key must be at least 4096 bits
 gpg --list-secret-keys --keyid-format=long
 
 gpg --armor --export <key-id>
 ```
+Example: 4096R/3AA5C34371567BD2 remove before /
 
 Signing commits:
 ```
